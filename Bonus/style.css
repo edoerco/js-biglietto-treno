@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url(https://www.hotelarpa.com/wp-content/uploads/2019/03/hotel-arpa-rimini-al-mare-in-treno.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    height: 500px;
+}
+
+#titolo-prezzo {
+    padding: 15px 0 0 15px;
+}
+
+#prezzo {
+    padding-left: 15px;
+}
+
+.debug .container {
+    background-color: red;
+}

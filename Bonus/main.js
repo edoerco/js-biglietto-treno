@@ -26,6 +26,4 @@ else if (eta > 65)
 
 ticket = ticket.toFixed(2);
 console.log('Il prezzo del biglietto è ' + ticket + '€')
-
-
-
+document.getElementById('prezzo').innerHTML = ticket  + ' €'
