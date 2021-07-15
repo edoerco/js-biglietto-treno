@@ -6,3 +6,30 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 */
+
+var km = parseInt(prompt('Quanti km prevede il tuo viaggio?'));
+console.log(km);
+
+var eta = parseInt(prompt('Quanti anni hai?'));
+console.log(eta);
+
+var ticket = (km * 0.21);
+console.log(ticket);
+
+if (eta < 18)
+{
+    var under18 = ticket * 0.8;
+    console.log('Il prezzo del biglietto è ' + under18 + ' €');
+}
+else if (eta > 65) 
+{
+    var over65 = ticket * 0.6;
+    console.log('Il prezzo del biglietto è ' +  over65 + ' €'); 
+}
+else
+{
+    var over18under65 = ticket;
+    console.log('Il prezzo del biglietto è ' + over18under65 + ' €')
+}
+
+
