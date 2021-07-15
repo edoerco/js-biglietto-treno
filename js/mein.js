@@ -19,16 +19,22 @@ console.log(ticket);
 if (eta < 18)
 {
     var under18 = ticket * 0.8;
+        // arrotondo fino al decimale
+        under18 = under18.toFixed(2)
     console.log('Il prezzo del biglietto è ' + under18 + ' €');
 }
 else if (eta > 65) 
 {
     var over65 = ticket * 0.6;
+        // arrotondo fino al decimale
+        over65 = over65.toFixed(2)
     console.log('Il prezzo del biglietto è ' +  over65 + ' €'); 
 }
 else
 {
     var over18under65 = ticket;
+        // arrotondo fino al decimale
+        over18under65 = over18under65.toFixed(2)
     console.log('Il prezzo del biglietto è ' + over18under65 + ' €')
 }
 
